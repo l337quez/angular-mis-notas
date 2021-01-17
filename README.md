@@ -1,4 +1,7 @@
 ### Angular, mis notas
+Angular por defecto usa http://localhost:4200/ 
+
+<br/>
 
 #### Ayuda en angular
 ```
