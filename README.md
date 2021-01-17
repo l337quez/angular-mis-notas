@@ -34,3 +34,23 @@ ng serve -o
 ```
 
 <br/>
+
+
+#### crear un componente
+
+```
+ng g c nombre_del_componente
+```
+
+<br/>
+
+
+#### crear un modulo
+Para organizar el proyecto, creamos modulos, en resumida un modulo es una carpeta donde adentro habran otros modulos..
+```
+ng g m nombre_del_modulo
+```
+
+<br/>
+
+https://ronaldl337.wordpress.com/2018/08/22/programando-en-angular-tutorial-1/
