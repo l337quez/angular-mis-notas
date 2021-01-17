@@ -17,4 +17,17 @@ usuarlmente se comaparte el proyecto menos la carpeta node_modules, ya que esta 
 ```
 npm install
 ```
+
+<br/>
+
+#### Ejecutar el proyecto
+abimos la terminal y debemos pararnos dentro del proyecto
+```
+ng serve
+```
+Si queremos que se abra el navegador con la ip y el puerto con la que trabajamos hacemos esto. 
+```
+ng serve -o
+```
+
 <br/>
