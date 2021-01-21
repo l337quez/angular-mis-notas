@@ -53,4 +53,17 @@ ng g m nombre_del_modulo
 
 <br/>
 
+
+#### Para interactuar con el Backend necesitamos el httpclient
+debemos en importar el modulo en los imports
+
+```
+import { HttpClientModule } from '@angular/common/http';
+imports: [
+    HttpClientModule
+  ]
+```
+
+<br/>
+
 https://ronaldl337.wordpress.com/2018/08/22/programando-en-angular-tutorial-1/
