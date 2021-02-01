@@ -78,4 +78,19 @@ imports: [
 
 <br/>
 
+#### Guardar en local storage
+
+El storage es como una memoria cache del navegador.
+
+```
+localStorage.setItem('id', resp.id);
+```
+* En local storage solo se guarda texto, es decir un objecto no se puede guardar, se debe primero convertir en string
+
+```
+localStorage.setItem('id', JSON.stringfy(resp.user));
+```
+
+<br/>
+
 https://ronaldl337.wordpress.com/2018/08/22/programando-en-angular-tutorial-1/
