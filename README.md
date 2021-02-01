@@ -121,4 +121,7 @@ localStorage.setItem('id', JSON.stringfy(resp.user));
 
 <br/>
 
+#### Bibliografia
+
 https://ronaldl337.wordpress.com/2018/08/22/programando-en-angular-tutorial-1/
+https://codingpotions.com/angular-seguridad
