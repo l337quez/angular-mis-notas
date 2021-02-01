@@ -53,6 +53,18 @@ ng g m nombre_del_modulo
 
 <br/>
 
+#### error con el .map
+instalamos
+```
+npm i rxjs-compat --save-dev
+```
+E importarlo como a continuación
+
+```
+import 'rxjs/Rx';
+```
+
+<br/>
 
 #### Para interactuar con el Backend necesitamos el httpclient
 debemos en importar el modulo en los imports
