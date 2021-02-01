@@ -53,6 +53,25 @@ ng g m nombre_del_modulo
 
 <br/>
 
+
+#### crear un guard (para proteger las rutas de la pagina)
+
+Existen 4 tipos:
+* CanActivate: Mira si el usuario puede acceder a una página determinada.
+
+* CanActivateChild: Mira si el usuario puede acceder a las páginas hijas de una determinada ruta.
+
+* CanDeactivate: Mira si el usuario puede salir de una página, es decir, podemos hacer que aparezca un mensaje, por ejemplo, de comfirmación, si el usuario tiene cambios sin guardar.
+
+* CanLoad: Sirve para evitar que la aplicación cargue los módulos perezosamente si el usuario no está autorizado a hacerlo.
+
+```
+ng g g  services/guards/loginGuard
+```
+
+
+<br/>
+
 #### error con el .map
 instalamos
 ```
