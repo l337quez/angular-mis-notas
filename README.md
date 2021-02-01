@@ -78,13 +78,22 @@ imports: [
 
 <br/>
 
-#### Guardar en local storage
+#### Usando local storage
 
 El storage es como una memoria cache del navegador.
+
+* Para guardar
+
+```
+localStorage.removeItem('id');
+```
+
+* Para eliminar 
 
 ```
 localStorage.setItem('id', resp.id);
 ```
+
 * En local storage solo se guarda texto, es decir un objecto no se puede guardar, se debe primero convertir en string
 
 ```
