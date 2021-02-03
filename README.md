@@ -107,7 +107,13 @@ El storage es como una memoria cache del navegador.
 localStorage.removeItem('id');
 ```
 
-* Para eliminar 
+* Para eliminar todo de localstorage
+
+```
+localStorage.clear();
+```
+
+* Para eliminar un item
 
 ```
 localStorage.setItem('id', resp.id);
