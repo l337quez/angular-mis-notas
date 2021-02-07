@@ -127,6 +127,15 @@ localStorage.setItem('id', JSON.stringfy(resp.user));
 
 <br/>
 
+#### Como redireccionar a otra pagina (navegar hacia otra pagina)
+Podremos usar Router Link dentro del componente Html
+
+```
+[routerLink]="['/sheetmusic','allartists']
+```
+
+<br/>
+
 #### Bibliografia
 
 https://ronaldl337.wordpress.com/2018/08/22/programando-en-angular-tutorial-1/
