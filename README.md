@@ -132,6 +132,17 @@ Si bien podremos crear un servicio para interceptar la peticion http y agregar e
 por ejemplo user agregamos el observable que se encuentra en el codigo he importamos lo requerido. cambie el nombre
 auth_token por el nombre del token que tienes en localstorage, es importante estar guardando el token en el 
 localstorage cuando se esta logiando para poder hacer este procedimiento.
+
+mas informacion aqui https://amoelcodigo.com/interceptor-angular/
+
+creamos un servicio
+
+```
+ng g s services/authInterceptor/authInterceptor
+```
+
+Agregamos el siguiente codigo dentro del servicios que acabamos de crear
+
 ```
 import { Injectable } from '@angular/core';
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
