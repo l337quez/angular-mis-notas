@@ -127,6 +127,38 @@ localStorage.setItem('id', JSON.stringfy(resp.user));
 
 <br/>
 
+#### Enviar el token por el header
+Si bien podremos crear un servicio para interceptar la peticion http y agregar el token o si ya tenemos el servicio
+por ejemplo user agregamos el observable que se encuentra en el codigo he importamos lo requerido. cambie el nombre
+auth_token por el nombre del token que tienes en localstorage, es importante estar guardando el token en el 
+localstorage cuando se esta logiando para poder hacer este procedimiento.
+```
+import { Injectable } from '@angular/core';
+import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
+import { Observable } from 'rxjs';
+@Injectable()
+export class AuthInterceptor implements HttpInterceptor {
+intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    const token = localStorage.getItem('auth_token');
+if (!token) {
+      return next.handle(req);
+    }
+const headers = req.clone({
+      headers: req.headers.set('Authorization', `Bearer ${token}`)
+    });
+return next.handle(headers);
+  }
+}
+```
+si solo vas a implementar el observable seguramente debras importar solo esto
+
+```
+import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
+import { Observable } from 'rxjs';
+```
+
+<br/>
+
 #### Como redireccionar a otra pagina (navegar hacia otra pagina)
 Podremos usar Router Link dentro del componente Html
 
