@@ -179,6 +179,13 @@ Podremos usar Router Link dentro del componente Html
 
 <br/>
 
+#### Enviar datos a un Modal
+
+https://levelup.gitconnected.com/pass-data-into-ng-bootstrap-modal-in-angular-8-65608361093a
+
+<br/>
+
+
 #### Bibliografia
 
 https://ronaldl337.wordpress.com/2018/08/22/programando-en-angular-tutorial-1/
