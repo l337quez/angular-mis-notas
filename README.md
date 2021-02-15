@@ -197,7 +197,22 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 ```
 
-https://levelup.gitconnected.com/pass-data-into-ng-bootstrap-modal-in-angular-8-65608361093a
+ahora instalamos
+
+```
+npm install bootstrap --save
+```
+
+Ahora nos vamos al archivo "angular.json" e importamos a bootstrap
+
+```
+"styles": [
+  "src/styles.css",
+  "node_modules/bootstrap/dist/css/bootstrap.min.css"
+]
+```
+
+Mas informacion aqui: https://levelup.gitconnected.com/pass-data-into-ng-bootstrap-modal-in-angular-8-65608361093a
 
 <br/>
 
