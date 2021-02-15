@@ -181,6 +181,22 @@ Podremos usar Router Link dentro del componente Html
 
 #### Enviar datos a un Modal
 
+instalamos 
+
+```
+npm install @ng-bootstrap/ng-bootstrap --save
+```
+
+
+importamos en el modulo del componenete que estamos usando ReacticeFormsModule y lo agregamos en 
+el array de import. Ejm: si su componente esta dentro de el modulo pages.modulo, entonces en pages  
+modulo es que debes importar el ReactiveFormsModule y FormsModule
+
+```
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
+```
+
 https://levelup.gitconnected.com/pass-data-into-ng-bootstrap-modal-in-angular-8-65608361093a
 
 <br/>
