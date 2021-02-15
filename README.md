@@ -212,6 +212,25 @@ Ahora nos vamos al archivo "angular.json" e importamos a bootstrap
 ]
 ```
 
+El modal lo introduciomos dentro de esto
+
+```
+    <ng-template #editProfileModal let-modal></ng-template>
+```
+
+Agregamos  un form dentro de la clase "modal-body" del modal
+
+```
+<form [formGroup]="editProfileForm" (ngSubmit)="onSubmit()" >  </form>
+
+```
+
+Importamos en el App module
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
+
 Mas informacion aqui: https://levelup.gitconnected.com/pass-data-into-ng-bootstrap-modal-in-angular-8-65608361093a
 
 <br/>
