@@ -235,6 +235,15 @@ Mas informacion aqui: https://levelup.gitconnected.com/pass-data-into-ng-bootstr
 
 <br/>
 
+#### Generar la carpeta Dist
+
+
+```
+ng build
+```
+
+<br/>
+
 
 #### Bibliografia
 
