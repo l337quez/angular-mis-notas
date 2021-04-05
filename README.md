@@ -167,7 +167,17 @@ si solo vas a implementar el observable seguramente debras importar solo esto
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { Observable } from 'rxjs';
 ```
-Exportar el servicio a los modulos donde se va usar.
+Exportar el servicio a los modulos donde se va usar. En appModule debes agregar esto en el provider
+
+```
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptorService,
+      multi: true
+    }
+  ]
+  ```
 
 <br/>
 
