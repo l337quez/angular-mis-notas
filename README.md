@@ -167,6 +167,7 @@ si solo vas a implementar el observable seguramente debras importar solo esto
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { Observable } from 'rxjs';
 ```
+Exportar el servicio a los modulos donde se va usar.
 
 <br/>
 
