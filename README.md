@@ -53,6 +53,14 @@ ng g m nombre_del_modulo
 
 <br/>
 
+#### crear un Servicio
+los servicios deben ser usados para procesar algo y los componentes nunca deberían guardar datos ni presentar datos falsos...
+```
+ng g s services/user
+```
+
+<br/>
+
 
 #### crear un guard (para proteger las rutas de la pagina)
 
