@@ -263,6 +263,33 @@ ng build
 
 <br/>
 
+#### Decodificar token JWT
+si guardas un id dentro del token, un correo (NO deben haber datos importantes), recodemos que un token se puede decifrar desde esta pagina 
+https://jwt.io/
+entonce, para decodificarlo dentro del front, debemos instalar
+
+```
+npm install jwt-decode --save
+```
+debemos importar 
+```
+import * as jwt_decode from "jwt-decode";
+```
+Para decodificar el token hacemos una funcion que retorna un json del token codificado
+```
+ getDecodedAccessToken(token: string): any {
+    try{
+        return jwt_decode(token);
+    }
+    catch(Error){
+        return null;
+    }
+  }
+```
+<br/>
+
+<br/>
+
 
 #### Bibliografia
 
