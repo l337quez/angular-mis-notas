@@ -273,7 +273,7 @@ npm install jwt-decode --save
 ```
 debemos importar 
 ```
-import * as jwt_decode from "jwt-decode";
+import jwt_decode from 'jwt-decode';
 ```
 Para decodificar el token hacemos una funcion que retorna un json del token codificado
 ```
