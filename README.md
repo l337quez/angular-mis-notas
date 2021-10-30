@@ -288,8 +288,13 @@ Para decodificar el token hacemos una funcion que retorna un json del token codi
 ```
 <br/>
 
+#### Consumir un end point de una API
+Es recomendado que la logica que no sea de la vista se haga un servicio. He conseguido un buen tutorial, que explica todo
+https://codingpotions.com/angular-servicios-llamadas-http
+
 <br/>
 
+<br/>
 
 #### Bibliografia
 
