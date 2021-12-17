@@ -288,6 +288,45 @@ Para decodificar el token hacemos una funcion que retorna un json del token codi
 ```
 <br/>
 
+
+
+#### Crear un interceptor asincrono
+Si la obtencion del tokenlo hacemos de forma asincrona, entonces nuestro interceptor debe ser asincrono tambien
+
+```
+import { MyAuth} from './myauth'
+import { from } from 'rxjs'
+
+@Injectable()
+export class AuthInterceptor implements HttpInterceptor {
+  constructor(private auth: MyAuth) {}
+
+  intercept(req: HttpRequest<any>, next: HttpHandler) {
+    // convert promise to observable using 'from' operator
+    return from(this.handle(req, next))
+  }
+
+  async handle(req: HttpRequest<any>, next: HttpHandler) {
+    // if your getAuthToken() function declared as "async getAuthToken() {}"
+    await this.auth.getAuthToken()
+
+    // if your getAuthToken() function declared to return an observable then you can use
+    // await this.auth.getAuthToken().toPromise()
+
+    const authReq = req.clone({
+      setHeaders: {
+        Authorization: authToken
+      }
+    })
+
+    // Important: Note the .toPromise()
+    return next.handle(authReq).toPromise()
+  }
+}
+```
+
+<br/>
+
 #### Consumir un end point de una API
 Es recomendado que la logica que no sea de la vista se haga un servicio. He conseguido un buen tutorial, que explica todo
 https://codingpotions.com/angular-servicios-llamadas-http
